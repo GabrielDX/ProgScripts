@@ -1,0 +1,23 @@
+<%- include('./partials/head.ejs') %>
+
+<br >
+<div class="container">
+    <label class="col justify-content-center col-form-label col-form-label-lg">Bem vindo ao projetinho jurassico de scripts</label>
+    <div class="card">
+        <div class="card-body">
+            <form id="form" method="POST" action="/login/entrar">
+                <div class="form-floating mb-3">
+                    <input type="text" minlength="14" name="cpf" class="form-control" id="cpf" placeholder="Login" required>
+                    <label for="cpf">CPF</label>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-primary col-sm-2" style="background-color: #0069d9; color: white;">Entrar</button>
+                    <a href="/cadastro" class="btn btn-warning col-sm-2 offset-md-1" style="background-color: rgb(255, 153, 0); color: white;">Cadastrar</a>
+                    <!-- <a href="/loginFun" class="btn btn-danger col-sm-2 offset-md-1" style="background-color: #138496; color: white;">Funcionário</a> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>
